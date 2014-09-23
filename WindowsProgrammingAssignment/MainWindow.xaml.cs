@@ -18,6 +18,7 @@ namespace WindowsProgrammingAssignment
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// test er jeg med
     public partial class MainWindow : Window
     {
         public MainWindow()
