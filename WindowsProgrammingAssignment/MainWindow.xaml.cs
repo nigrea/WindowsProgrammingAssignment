@@ -19,6 +19,7 @@ namespace WindowsProgrammingAssignment
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     /// test er jeg med
+    /// cthp er med
     public partial class MainWindow : Window
     {
         public MainWindow()
