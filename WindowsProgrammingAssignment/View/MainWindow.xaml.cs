@@ -26,30 +26,8 @@ namespace WindowsProgrammingAssignment
         {
             InitializeComponent();
             
-
-
         }
 
-        private void ExpandToolbar_Button_Click(object sender, RoutedEventArgs e)
-        {
-            if (rect.Visibility == System.Windows.Visibility.Collapsed)
-            {
-                rect.Visibility = System.Windows.Visibility.Visible;
-                (sender as Button).Content = "<";
-                (sender as Button).Margin = new Thickness(65, 226, 0, 0); 
-                
-            }
-            else
-            {
-                rect.Visibility = System.Windows.Visibility.Collapsed;
-                (sender as Button).Content = ">";
-                (sender as Button).Margin = new Thickness(0, 226, 0, 0); 
-            }     
-        }
-
-        private void HeaderOpenClicked(object sender, RoutedEventArgs e)
-        {
-            System.Console.WriteLine("Open!!");
-        }
+        
     }
 }
