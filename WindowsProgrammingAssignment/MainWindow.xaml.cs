@@ -36,12 +36,14 @@ namespace WindowsProgrammingAssignment
             {
                 rect.Visibility = System.Windows.Visibility.Visible;
                 (sender as Button).Content = "<";
+                (sender as Button).Margin = new Thickness(65, 226, 0, 0); 
                 
             }
             else
             {
                 rect.Visibility = System.Windows.Visibility.Collapsed;
                 (sender as Button).Content = ">";
+                (sender as Button).Margin = new Thickness(0, 226, 0, 0); 
             }     
         }
 

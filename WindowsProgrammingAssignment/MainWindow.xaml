@@ -12,16 +12,20 @@
         </Menu>
         <StackPanel>
             <Grid Height="482">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="143*"/>
+                    <RowDefinition Height="98*"/>
+                </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
-                <DockPanel  x:Name="rect" LastChildFill="True" Visibility="Collapsed">
+                <DockPanel  x:Name="rect" LastChildFill="True" Visibility="Collapsed" Grid.RowSpan="2">
                     <Border  Background="SkyBlue" BorderBrush="Black" BorderThickness="1" DockPanel.Dock="Top">
                         <TextBlock Foreground="Black"><Run Text="Dock = &quot;Top&quot;"/></TextBlock>
                     </Border>
                 </DockPanel>
-                <Button x:Name="ToolboxExpand" Content=">" HorizontalAlignment="Left" Margin="-1,226,0,0" VerticalAlignment="Top" Width="75" Click="ExpandToolbar_Button_Click"/>
+                <Button x:Name="ToolboxExpand" Content="&gt;" HorizontalAlignment="Left" Margin="-1,226,0,0" VerticalAlignment="Top" Width="18" Click="ExpandToolbar_Button_Click" Height="106" Grid.RowSpan="2"/>
             </Grid>
         </StackPanel>
     </DockPanel>
