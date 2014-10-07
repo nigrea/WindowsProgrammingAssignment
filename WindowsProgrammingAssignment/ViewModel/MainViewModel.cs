@@ -14,13 +14,13 @@ namespace WindowsProgrammingAssignment.ViewModel
     {
         public ICommand ExpandButton { get; private set; }
 
-        public MainViewModel() { 
-        
-            ExpandButton = new RelayCommand(ExpandSideBar);
+        public MainViewModel() {
+
+            ExpandButton = new RelayCommand<MouseButtonEventArgs>(ExpandSideBar);
 
         }
 
-        public void ExpandSideBar()
+        public void ExpandSideBar(MouseButtonEventArgs e)
         {
             System.Console.WriteLine("IT WORKS!!!! YAY");       
         }
