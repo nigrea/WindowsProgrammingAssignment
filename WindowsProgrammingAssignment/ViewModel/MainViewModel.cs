@@ -1,4 +1,4 @@
-﻿
+﻿using System.Windows.Input;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,8 +9,10 @@ namespace WindowsProgrammingAssignment.ViewModel
 {
     class MainViewModel
     {
+        public ICommand ExpandButton { get; private set; }
 
-       // public ICommand UndoCommand { get; private set; }
+        public MainViewModel() { }
+
 
 
     }
