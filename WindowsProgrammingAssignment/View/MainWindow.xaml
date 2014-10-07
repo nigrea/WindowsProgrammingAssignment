@@ -6,7 +6,7 @@
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="_File">
-                <MenuItem Header="_Open" Click="HeaderOpenClicked"/>
+                <MenuItem Header="_Open"/>
                 <MenuItem Header="_Close"/>
                 <MenuItem Header="_Save"/>
             </MenuItem>
@@ -26,7 +26,7 @@
                         <TextBlock Foreground="Black"><Run Text="Dock = &quot;Top&quot;"/></TextBlock>
                     </Border>
                 </DockPanel>
-                <Button Command="{Binding ExpandButton}" x:Name="ToolboxExpand" Content="&gt;" HorizontalAlignment="Left" Margin="-1,226,0,0" VerticalAlignment="Top" Width="18" Click="ExpandToolbar_Button_Click" Height="106" Grid.RowSpan="2"/>
+                <Button Command="{Binding ExpandButton}" x:Name="ToolboxExpand" Content="&gt;" HorizontalAlignment="Left" Margin="-1,226,0,0" VerticalAlignment="Top" Width="18" Height="106" Grid.RowSpan="2"/>
             </Grid>
         </StackPanel>
     </DockPanel>
